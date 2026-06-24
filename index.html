@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAIL — Sociotechnical AI Lab | University of Arizona</title>
+  <meta name="description" content="The Sociotechnical AI Lab (SAIL) at the University of Arizona College of Information Science, directed by Dr. Lingyao Li, studies AI systems at the interface of human and technical processes — building AI we can TRUST." />
+  <link rel="icon" type="image/png" href="assets/img/sail-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html" aria-label="SAIL home">
+        <span class="brand__mark" aria-hidden="true">
+          <img src="assets/img/sail-logo.png" alt="SAIL logo" width="42" height="42" />
+        </span>
+        <span class="brand__text">
+          <strong>SAIL</strong>
+          <em>Sociotechnical AI Lab</em>
+        </span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html" class="is-active">Home</a>
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="news.html">News</a>
+        <a href="join.html">Join Us</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <canvas class="hero__canvas" id="netCanvas" aria-hidden="true"></canvas>
+    <div class="hero__wordcloud" id="wordCloud" aria-hidden="true"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">University of Arizona · College of Information Science</p>
+      <h1 class="hero__title" id="heroTitle">
+        <span class="grad">S</span>ociotechnical <span class="grad">AI</span> <span class="grad">L</span>ab <span class="hero__abbr">(SAIL)</span>
+      </h1>
+      <p class="hero__lede">
+        We study the design and deployment of AI systems at the interface of
+        human and technical processes — leveraging LLMs and AI agents to solve
+        sociotechnical problems.
+      </p>
+
+      <div class="hero__trust" id="trustStrip">
+        <span><b>T</b>imely</span>
+        <span><b>R</b>esponsible</span>
+        <span><b>U</b>nderstandable</span>
+        <span><b>S</b>calable</span>
+        <span><b>T</b>ransparent</span>
+      </div>
+      <p class="hero__tagline">Building AI we can <span class="trustword">TRUST</span>.</p>
+
+      <div class="hero__cta">
+        <a href="research.html" class="btn btn--primary">Explore our research</a>
+        <a href="join.html" class="btn btn--ghost">Join the lab</a>
+      </div>
+    </div>
+
+    <a href="#overview" class="hero__scroll" aria-label="Scroll to overview">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ RESEARCH OVERVIEW DIAGRAM ============ -->
+  <section class="overview" id="overview">
+    <div class="section-head">
+      <p class="kicker">Research Overview</p>
+      <h2>AI at the interface of human and sociotechnical processes</h2>
+      <p class="section-sub">
+        Our work spans four connected areas — two methodological foundations and
+        two application domains. Select an area to learn more.
+      </p>
+    </div>
+
+    <div class="diagram" id="diagram">
+      <!-- AI Agents -->
+      <a class="node node--method" href="research.html#agents" data-area="agents">
+        <img class="node__img" src="assets/img/area-agents.png" alt="AI agents collaborating in a multi-agent network" loading="lazy" />
+        <div class="node__body">
+          <span class="node__tag">Methods</span>
+          <h3>AI Agents</h3>
+          <p>We build and study LLM-driven multi-agent systems, examining their reasoning, capabilities, and failure modes.</p>
+          <span class="node__more">Learn more →</span>
+        </div>
+      </a>
+
+      <!-- Human-AI Interaction -->
+      <a class="node node--method" href="research.html#interaction" data-area="interaction">
+        <img class="node__img" src="assets/img/area-interaction.png" alt="A person interpreting an AI explanation" loading="lazy" />
+        <div class="node__body">
+          <span class="node__tag">Methods</span>
+          <h3>Human–AI Interaction</h3>
+          <p>We study how people interpret and rely on AI, focusing on transparency, reliability, and trust.</p>
+          <span class="node__more">Learn more →</span>
+        </div>
+      </a>
+
+      <!-- Healthcare -->
+      <a class="node node--app" href="research.html#health" data-area="health">
+        <img class="node__img" src="assets/img/area-health.png" alt="An AI health assistant alongside medical records" loading="lazy" />
+        <div class="node__body">
+          <span class="node__tag">Applications</span>
+          <h3>AI for Health</h3>
+          <p>We analyze public experiences of treatments and policies, and build agents that support medical decision-making.</p>
+          <span class="node__more">Learn more →</span>
+        </div>
+      </a>
+
+      <!-- Urban -->
+      <a class="node node--app" href="research.html#urban" data-area="urban">
+        <img class="node__img" src="assets/img/area-urban.png" alt="An urban community with crowdsourced data and disaster signals" loading="lazy" />
+        <div class="node__body">
+          <span class="node__tag">Applications</span>
+          <h3>AI for Urban &amp; Community</h3>
+          <p>We use crowdsourced data and LLMs to understand cities, studying community resilience, disaster impact, and equitable access.</p>
+          <span class="node__more">Learn more →</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- description under the figure -->
+    <div class="overview__desc">
+      <p>
+        AI's hardest challenges are not only technical but also
+        <strong>sociotechnical</strong>, arising from how capable models interact
+        with the people who use them. Our <strong>Sociotechnical AI Lab (SAIL)</strong> 
+        studies that interaction directly, asking:
+        What can today's AI systems do reliably, and where do they fail?
+        How do people understand, trust, and adapt these systems in everyday
+        settings like health and urban life? And how can we design agents that are
+        not only capable, but transparent and useful to the communities they serve?
+      </p>
+      <p>
+        SAIL develops and evaluates large language models and AI agents, and
+        applies them with human-generated data to address sociotechnical problems.
+        Our two methodological areas are tightly coupled: <em>Agent design</em>
+        shapes the questions we ask about <em>human-AI interaction</em>, and
+        findings on interaction guide how we build AI agents.
+      </p>
+      <p>
+        We ground this framework in two application domains. In
+        <strong>healthcare</strong>, we analyze public experiences of treatments
+        and policies and build agents that make health information easier to find
+        and act on. In <strong>urban</strong> settings, we use crowdsourced data and build models to
+        study community resilience, disaster impact, and equitable access, 
+        identifying public needs that are otherwise hard to observe at scale.
+        Ultimately, we aim to build <strong>trustworthy AI</strong> systems whose
+        reliability and transparency make them dependable partners in addressing
+        sociotechnical challenges.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ TRUST VALUES ============ -->
+  <section class="trust">
+    <div class="section-head">
+      <p class="kicker">Our Guiding Principle</p>
+      <h2>Building AI we can <span class="trustword">TRUST</span></h2>
+      <p class="section-sub">
+        Across study areas, we develop AI methods that infer human needs at scale
+        and respond to them in ways that are:
+      </p>
+    </div>
+
+    <div class="trust__grid">
+      <div class="value">
+        <span class="value__letter">T</span>
+        <span class="value__ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
+        </span>
+        <h4>Timely</h4>
+        <p>Responding when it matters, at the speed real decisions require.</p>
+      </div>
+      <div class="value">
+        <span class="value__letter">R</span>
+        <span class="value__ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.2-2.8 7.5-7 9-4.2-1.5-7-4.8-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+        </span>
+        <h4>Responsible</h4>
+        <p>Grounded in fairness, safety, and accountability to people.</p>
+      </div>
+      <div class="value">
+        <span class="value__letter">U</span>
+        <span class="value__ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 .8-1 1.7"/><circle cx="12" cy="16.5" r=".6" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <h4>Understandable</h4>
+        <p>Transparent and interpretable, so people know why and when to rely on AI.</p>
+      </div>
+      <div class="value">
+        <span class="value__letter">S</span>
+        <span class="value__ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 19h16"/><path d="M7 16l4-5 3 3 5-7"/></svg>
+        </span>
+        <h4>Scalable</h4>
+        <p>Delivering tools and methods that can be applied scalably across new settings and tasks — not one-off solutions.</p>
+      </div>
+      <div class="value">
+        <span class="value__letter">T</span>
+        <span class="value__ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        </span>
+        <h4>Transparent</h4>
+        <p>Open about methods, limits, and the data that AI learns from.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BANNER ============ -->
+  <section class="join">
+    <div class="join__inner">
+      <h2>Interested in working with us?</h2>
+      <p>We're an interdisciplinary lab at heart, and we welcome curious students and collaborators from all backgrounds—information science, computer science, public health, engineering, and beyond to join us!</p>
+      <a href="join.html" class="btn btn--primary">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__col">
+        <div class="brand brand--footer">
+          <span class="brand__mark" aria-hidden="true">
+            <img src="assets/img/sail-logo.png" alt="SAIL logo" width="36" height="36" />
+          </span>
+          <span class="brand__text">
+            <strong>SAIL</strong>
+            <em>Sociotechnical AI Lab</em>
+          </span>
+        </div>
+        <p class="footer__about">AI at the interface of human and sociotechnical processes.</p>
+      </div>
+
+      <div class="footer__col">
+        <h5>Explore</h5>
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="news.html">News</a>
+        <a href="join.html">Join Us</a>
+      </div>
+
+      <div class="footer__col">
+        <h5>Contact</h5>
+        <p><a href="https://infosci.arizona.edu/" target="_blank" rel="noopener">College of Information Science</a><br><a href="https://www.arizona.edu/" target="_blank" rel="noopener">University of Arizona</a><br>Tucson, AZ</p>
+        <a href="mailto:lingyaoli@arizona.edu">lingyaoli@arizona.edu</a>
+      </div>
+
+      <div class="footer__col footer__col--logo">
+        <img src="assets/img/ua-coi-logo.png" alt="University of Arizona College of Information Science" />
+      </div>
+    </div>
+    <div class="footer__bar">
+      <span>© <span id="year"></span> Sociotechnical AI Lab · University of Arizona</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

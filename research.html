@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — SAIL | University of Arizona</title>
+  <meta name="description" content="Research from the Sociotechnical AI Lab (SAIL): AI agents, human-AI interaction, and applications in health and urban communities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/img/sail-logo.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/page.css" />
+</head>
+<body>
+  <header class="nav scrolled" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html" aria-label="SAIL home">
+        <span class="brand__mark" aria-hidden="true">
+          <img src="assets/img/sail-logo.png" alt="SAIL logo" width="42" height="42" />
+        </span>
+        <span class="brand__text"><strong>SAIL</strong><em>Sociotechnical AI Lab</em></span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="research.html" class="is-active">Research</a>
+        <a href="people.html">People</a>
+        <a href="news.html">News</a>
+        <a href="join.html">Join Us</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="page__hero">
+      <canvas class="page__canvas" id="netCanvas" aria-hidden="true"></canvas>
+      <div class="page__hero-inner">
+        <h1>Research</h1>
+        <p class="page__sub">Four connected areas, working toward AI we can TRUST.</p>
+      </div>
+    </div>
+
+    <nav class="rnav" aria-label="Research areas">
+      <div class="rnav__inner">
+        <a href="#agents">AI Agents</a>
+        <a href="#interaction">Human-AI Interaction</a>
+        <a href="#health">AI for Health</a>
+        <a href="#urban">AI for Urban &amp; Community</a>
+      </div>
+    </nav>
+
+    <section class="rsec" id="agents">
+      <div class="rsec__head">
+        <span class="rsec__tag">Methods</span>
+        <h2>AI Agents</h2>
+        <p>We design and study AI agents and work to understand their reasoning, capabilities, and failure modes. Beyond building agents that can plan, collaborate, and act on complex tasks, we characterize what they can and cannot do — developing benchmarks that probe the limits of reasoning and identifying principles for assembling agents into reliable systems. We also study what makes agents durable and adaptive: how memory lets them retain experience, how skills compose into reusable capabilities, and how self-evolving agents refine their own behavior.</p>
+      </div>
+      <div class="paperlist">
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area1/paper_10.png" target="_blank" rel="noopener" aria-label="View full figure for The Rise of AI Agent Communities: Large-Scale Analysis of Discourse and Interaction on Moltbook">
+              <img src="assets/research/area1/paper_10.png" alt="Figure from: The Rise of AI Agent Communities: Large-Scale Analysis of Discourse and Interaction on Moltbook" loading="lazy" />
+            </a>
+            <p class="paper__cap">Discussion themes and the agent-to-agent interaction network on Moltbook.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2026</span>
+              <span class="paper__venue">arXiv preprint</span>
+            </div>
+            <h3 class="paper__title">The Rise of AI Agent Communities: Large-Scale Analysis of Discourse and Interaction on Moltbook</h3>
+            <p class="paper__authors">Lingyao Li, Renkai Ma, Chen Chen, Zhicong Lu, Yongfeng Zhang</p>
+            <p class="paper__abs">This study presents a large-scale analysis of 122,438 posts on Moltbook, a Reddit-like platform where AI agents post and interact with one another. Using topic modeling and social network analysis, it characterizes what agents discuss and how they connect, revealing a sparse, hub-dominated interaction structure shaped more by technical coordination than the conversational dynamics seen among humans.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.48550/arXiv.2602.12634" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area1/paper_3.png" target="_blank" rel="noopener" aria-label="View full figure for Can LLM Agents Really Debate? A Controlled Study of Multi-Agent Debate in Logical Reasoning">
+              <img src="assets/research/area1/paper_3.png" alt="Figure from: Can LLM Agents Really Debate? A Controlled Study of Multi-Agent Debate in Logical Reasoning" loading="lazy" />
+            </a>
+            <p class="paper__cap">Controlled multi-agent debate setup on the Knight–Knave–Spy logic puzzle.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2025</span>
+              <span class="paper__venue">arXiv preprint</span>
+            </div>
+            <h3 class="paper__title">Can LLM Agents Really Debate? A Controlled Study of Multi-Agent Debate in Logical Reasoning</h3>
+            <p class="paper__authors">Haolun Wu, Zhenkun Li, Lingyao Li</p>
+            <p class="paper__abs">This study runs a controlled experiment with the Knight–Knave–Spy logic puzzle to test whether multi-agent debate yields genuine deliberative reasoning rather than simple voting. It finds that intrinsic reasoning strength and group diversity are the dominant drivers of debate success, while structural factors such as debate order or confidence visibility contribute surprisingly little to collective outcomes.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.48550/arXiv.2511.07784" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area1/paper_6.png" target="_blank" rel="noopener" aria-label="View full figure for Invisible Prompts, Visible Threats: Malicious Font Injection in External Resources for Large Language Models">
+              <img src="assets/research/area1/paper_6.png" alt="Figure from: Invisible Prompts, Visible Threats: Malicious Font Injection in External Resources for Large Language Models" loading="lazy" />
+            </a>
+            <p class="paper__cap">The malicious font-injection attack pipeline through external resources.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2025</span>
+              <span class="paper__venue">EMNLP Findings &#x27;25 — Empirical Methods in Natural Language Processing</span>
+            </div>
+            <h3 class="paper__title">Invisible Prompts, Visible Threats: Malicious Font Injection in External Resources for Large Language Models</h3>
+            <p class="paper__authors">Junjie Xiong, Changjia Zhu, Shuhang Lin, Chong Zhang, Yongfeng Zhang, Yao Liu, Lingyao Li</p>
+            <p class="paper__abs">This study uncovers a security vulnerability in which malicious font injection hides adversarial prompts inside external web resources—invisible to users but read by LLMs. Through content-relay and data-leakage attacks on tools enabled by the Model Context Protocol, it shows that hidden instructions can bypass safety mechanisms, underscoring the urgent need for stronger safeguards when models process external content.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://aclanthology.org/2025.findings-emnlp.376/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area1/paper_9.png" target="_blank" rel="noopener" aria-label="View full figure for PartnerMAS: An LLM Hierarchical Multi-Agent Framework for Business Partner Selection on High-Dimensional Features">
+              <img src="assets/research/area1/paper_9.png" alt="Figure from: PartnerMAS: An LLM Hierarchical Multi-Agent Framework for Business Partner Selection on High-Dimensional Features" loading="lazy" />
+            </a>
+            <p class="paper__cap">The three-layer Planner–Specialist–Supervisor agent hierarchy.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2025</span>
+              <span class="paper__venue">arXiv preprint</span>
+            </div>
+            <h3 class="paper__title">PartnerMAS: An LLM Hierarchical Multi-Agent Framework for Business Partner Selection on High-Dimensional Features</h3>
+            <p class="paper__authors">Lingyao Li, Haolun Wu, Zhenkun Li, Jiabei Hu, Yu Wang, Xiaoshan Huang, Wenyue Hua, Wenqian Wang</p>
+            <p class="paper__abs">This study proposes PartnerMAS, a hierarchical multi-agent framework of Planner, Specialized, and Supervisor agents for high-dimensional decisions such as business partner selection. Evaluated on a curated venture-capital co-investment benchmark of 140 cases, it consistently outperforms single-agent and debate-based baselines and clarifies the distinct, complementary role that each agent layer plays in aggregation.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.48550/arXiv.2509.24046" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area1/paper_1.png" target="_blank" rel="noopener" aria-label="View full figure for ADO: Automatic Data Optimization for Inputs in LLM Prompts">
+              <img src="assets/research/area1/paper_1.png" alt="Figure from: ADO: Automatic Data Optimization for Inputs in LLM Prompts" loading="lazy" />
+            </a>
+            <p class="paper__cap">The ADO framework: content engineering and structural reformulation.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2025</span>
+              <span class="paper__venue">ACL Findings &#x27;25 — Association for Computational Linguistics</span>
+            </div>
+            <h3 class="paper__title">ADO: Automatic Data Optimization for Inputs in LLM Prompts</h3>
+            <p class="paper__authors">Sam Lin, Wenyue Hua, Lingyao Li, Zhenting Wang, Yongfeng Zhang</p>
+            <p class="paper__abs">This study introduces Automatic Data Optimization (ADO), a two-pronged strategy of content engineering and structural reformulation that optimizes the input data inside prompts rather than the surrounding instructions. Across diverse tasks, it shows that imputing, pruning, enriching, and reformatting the data itself can significantly improve LLM performance, opening a promising new direction for prompt engineering research.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://aclanthology.org/2025.findings-acl.1340/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area1/paper_4.png" target="_blank" rel="noopener" aria-label="View full figure for Disentangling Logic: The Role of Context in Large Language Model Reasoning Capabilities">
+              <img src="assets/research/area1/paper_4.png" alt="Figure from: Disentangling Logic: The Role of Context in Large Language Model Reasoning Capabilities" loading="lazy" />
+            </a>
+            <p class="paper__cap">Abstract versus contextualized logic problems across twelve domains.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2025</span>
+              <span class="paper__venue">ACL Findings &#x27;25 — Association for Computational Linguistics</span>
+            </div>
+            <h3 class="paper__title">Disentangling Logic: The Role of Context in Large Language Model Reasoning Capabilities</h3>
+            <p class="paper__authors">Wenyue Hua, Kaijie Zhu, Lingyao Li, Lizhou Fan, Mingyu Jin, Shuhang Lin, Haochen Xue, Zelong Li, Jindong Wang, Yongfeng Zhang</p>
+            <p class="paper__abs">This study systematically separates pure logical reasoning from text understanding by contrasting abstract and contextualized logic problems across twelve domains and four difficulty levels. It examines whether LLMs reason genuinely when the underlying logical structure is held constant, and whether fine-tuning on abstract logic problems generalizes to contextualized ones and vice versa.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://aclanthology.org/2025.findings-acl.983/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area1/paper_7.png" target="_blank" rel="noopener" aria-label="View full figure for Know the Ropes: A Heuristic Strategy for LLM-based Multi-Agent System Design">
+              <img src="assets/research/area1/paper_7.png" alt="Figure from: Know the Ropes: A Heuristic Strategy for LLM-based Multi-Agent System Design" loading="lazy" />
+            </a>
+            <p class="paper__cap">Recursive task decomposition in the Know-The-Ropes framework.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2025</span>
+              <span class="paper__venue">arXiv preprint</span>
+            </div>
+            <h3 class="paper__title">Know the Ropes: A Heuristic Strategy for LLM-based Multi-Agent System Design</h3>
+            <p class="paper__authors">Zhenkun Li, Lingyao Li, Shuhang Lin, Yongfeng Zhang</p>
+            <p class="paper__abs">This study presents Know-The-Ropes (KtR), a framework that converts domain priors into an algorithmic blueprint hierarchy, recursively splitting tasks into typed, controller-mediated subtasks. Grounded in the No-Free-Lunch theorem, it shows that disciplined decomposition with the lightest viable augmentation turns modest models into reliable collaborators—without resorting to ever-larger monolithic models.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.48550/arXiv.2505.16979" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area1/paper_2.png" target="_blank" rel="noopener" aria-label="View full figure for BattleAgent: Multi-modal Dynamic Emulation on Historical Battles to Complement Historical Analysis">
+              <img src="assets/research/area1/paper_2.png" alt="Figure from: BattleAgent: Multi-modal Dynamic Emulation on Historical Battles to Complement Historical Analysis" loading="lazy" />
+            </a>
+            <p class="paper__cap">Multi-modal, multi-agent emulation of historical battles.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2024</span>
+              <span class="paper__venue">EMNLP &#x27;24 (System Demonstrations) — Empirical Methods in Natural Language Processing</span>
+            </div>
+            <h3 class="paper__title">BattleAgent: Multi-modal Dynamic Emulation on Historical Battles to Complement Historical Analysis</h3>
+            <p class="paper__authors">Shuhang Lin, Wenyue Hua, Lingyao Li, Che-Jui Chang, Lizhou Fan, Jianchao Ji, Hang Hua, Mingyu Jin, Jiebo Luo, Yongfeng Zhang</p>
+            <p class="paper__abs">This study presents BattleAgent, a demonstration system that combines vision-language models with a multi-agent system to emulate fine-grained interactions among agents and their environment over time. By recreating historical battles with customizable agent structures, it enriches the visualization of historical events and deepens understanding of decision-making from the participants&#x27; perspective.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://aclanthology.org/2024.emnlp-demo.18/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area1/paper_5.png" target="_blank" rel="noopener" aria-label="View full figure for Game-theoretic LLM: Agent Workflow for Negotiation Games">
+              <img src="assets/research/area1/paper_5.png" alt="Figure from: Game-theoretic LLM: Agent Workflow for Negotiation Games" loading="lazy" />
+            </a>
+            <p class="paper__cap">Agent workflow design for complete- and incomplete-information games.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2024</span>
+              <span class="paper__venue">arXiv preprint</span>
+            </div>
+            <h3 class="paper__title">Game-theoretic LLM: Agent Workflow for Negotiation Games</h3>
+            <p class="paper__authors">Wenyue Hua, Ollie Liu, Lingyao Li, Alfonso Amayuelas, Julie Chen, Lucas Jiang, Mingyu Jin, Lizhou Fan, Fei Sun, William Wang, Xintong Wang, Yongfeng Zhang</p>
+            <p class="paper__abs">This study designs LLM agent workflows grounded in classic game theory for both complete- and incomplete-information negotiation games. By embedding game-theoretic structure into agent reasoning, it shows that principled workflows substantially improve decision quality and negotiation outcomes compared with agents that negotiate without any such structured guidance.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.48550/arXiv.2411.05990" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area1/paper_8.png" target="_blank" rel="noopener" aria-label="View full figure for NPHardEval: Dynamic Benchmark on Reasoning Ability of Large Language Models via Complexity Classes">
+              <img src="assets/research/area1/paper_8.png" alt="Figure from: NPHardEval: Dynamic Benchmark on Reasoning Ability of Large Language Models via Complexity Classes" loading="lazy" />
+            </a>
+            <p class="paper__cap">A dynamic benchmark spanning complexity classes up to NP-Hard.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2024</span>
+              <span class="paper__venue">ACL &#x27;24 — Association for Computational Linguistics</span>
+            </div>
+            <h3 class="paper__title">NPHardEval: Dynamic Benchmark on Reasoning Ability of Large Language Models via Complexity Classes</h3>
+            <p class="paper__authors">Lizhou Fan, Wenyue Hua, Lingyao Li, Haoyang Ling, Yongfeng Zhang</p>
+            <p class="paper__abs">This study introduces NPHardEval, a dynamic benchmark of 900 algorithmic questions spanning complexity classes up to NP-Hard, with datapoints refreshed monthly to curb overfitting and memorization. By grounding evaluation in computational complexity and updating regularly, it offers a more rigorous and trustworthy measure of the reasoning ability of large language models.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://aclanthology.org/2024.acl-long.225/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area1/paper_12.png" target="_blank" rel="noopener" aria-label="View full figure for When AI Meets Finance (StockAgent): Large Language Model-based Stock Trading in Simulated Real-world Environments">
+              <img src="assets/research/area1/paper_12.png" alt="Figure from: When AI Meets Finance (StockAgent): Large Language Model-based Stock Trading in Simulated Real-world Environments" loading="lazy" />
+            </a>
+            <p class="paper__cap">The multi-agent LLM stock-trading simulation environment.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2024</span>
+              <span class="paper__venue">ACM Transactions on Intelligent Systems and Technology</span>
+            </div>
+            <h3 class="paper__title">When AI Meets Finance (StockAgent): Large Language Model-based Stock Trading in Simulated Real-world Environments</h3>
+            <p class="paper__authors">Chong Zhang, Xinyi Liu, Zhongmou Zhang, Mingyu Jin, Lingyao Li, Zhenting Wang, Wenyue Hua, Dong Shu, Suiyuan Zhu, Xiaobo Jin, Sujian Li, Mengnan Du, Yongfeng Zhang</p>
+            <p class="paper__abs">This study develops StockAgent, a multi-agent LLM system that simulates investors&#x27; trading behaviors under conditions closely resembling the real stock market. It enables analysis of how external factors—macroeconomics, policy changes, company fundamentals, and global events—shape trading and profitability, while avoiding the test-set leakage that affects prior AI-agent trading simulators.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.48550/arXiv.2407.18957" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area1/paper_11.png" target="_blank" rel="noopener" aria-label="View full figure for War and Peace (WarAgent): LLM-based Multi-Agent Simulation of World Wars">
+              <img src="assets/research/area1/paper_11.png" alt="Figure from: War and Peace (WarAgent): LLM-based Multi-Agent Simulation of World Wars" loading="lazy" />
+            </a>
+            <p class="paper__cap">LLM multi-agent simulation of historical international conflicts.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2024</span>
+              <span class="paper__venue">arXiv preprint</span>
+            </div>
+            <h3 class="paper__title">War and Peace (WarAgent): LLM-based Multi-Agent Simulation of World Wars</h3>
+            <p class="paper__authors">Wenyue Hua, Lizhou Fan, Lingyao Li, Kai Mei, Jianchao Ji, Yingqiang Ge, Libby Hemphill, Yongfeng Zhang</p>
+            <p class="paper__abs">This study proposes WarAgent, an LLM-powered multi-agent system that simulates countries, their decisions, and the consequences in historical conflicts including World War I, World War II, and the Warring States period of ancient China. By examining emergent interactions among agents, it offers a novel, data-driven lens on the triggers and conditions that lead nations to war.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.48550/arXiv.2311.17227" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="rsec" id="interaction">
+      <div class="rsec__head">
+        <span class="rsec__tag">Methods</span>
+        <h2>Human-AI Interaction</h2>
+        <p>We study how people understand, rely on, and are affected by AI systems — both LLM-based agents and embodied AI — and how to make them trustworthy, transparent, and helpful. We examine how people perceive, adopt, and adapt these technologies in everyday life, and the trust they place, or misplace, in AI guidance. We also identify the risks and vulnerabilities such systems introduce, working toward AI that is dependable and accountable to the communities it serves.</p>
+      </div>
+      <div class="paperlist">
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area2/paper_7.png" target="_blank" rel="noopener" aria-label="View full figure for LLM-as-a-Reviewer: Benchmarking Their Ability, Divergence, and Prompt Injection Resistance as Paper Reviewers">
+              <img src="assets/research/area2/paper_7.png" alt="Figure from: LLM-as-a-Reviewer: Benchmarking Their Ability, Divergence, and Prompt Injection Resistance as Paper Reviewers" loading="lazy" />
+            </a>
+            <p class="paper__cap">Benchmarking LLM reviewers on ability, divergence, and injection resistance.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2026</span>
+              <span class="paper__venue">arXiv preprint</span>
+            </div>
+            <h3 class="paper__title">LLM-as-a-Reviewer: Benchmarking Their Ability, Divergence, and Prompt Injection Resistance as Paper Reviewers</h3>
+            <p class="paper__authors">Lingyao Li, Junjie Xiong, Changjia Zhu, Runlong Yu, Chen Chen, Junyu Wang, Renkai Ma, Zhicong Lu</p>
+            <p class="paper__abs">This study benchmarks LLMs as paper reviewers on 898 NeurIPS and ICLR submissions across rating calibration, divergence from human reviewers, and resistance to prompt injection. It finds that LLMs systematically overrate weaker papers and remain highly vulnerable to hidden injection attacks, indicating that strong safeguards are essential before integrating them into scholarly peer review.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.48550/arXiv.2605.25415" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area2/paper_3.png" target="_blank" rel="noopener" aria-label="View full figure for Characterizing User-Reported Risks across LLM Chatbots">
+              <img src="assets/research/area2/paper_3.png" alt="Figure from: Characterizing User-Reported Risks across LLM Chatbots" loading="lazy" />
+            </a>
+            <p class="paper__cap">User-reported risks mapped across seven major LLM chatbots.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2026</span>
+              <span class="paper__venue">CHI &#x27;26 — Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems</span>
+            </div>
+            <h3 class="paper__title">Characterizing User-Reported Risks across LLM Chatbots</h3>
+            <p class="paper__authors">Lingyao Li, Renkai Ma, Zhaoqian Xue, Junjie Xiong</p>
+            <p class="paper__abs">This study analyzes Reddit discussions about seven major LLM chatbots through the lens of the NIST AI Risk Management Framework. It reveals that user-reported risks are unevenly distributed and chatbot-specific—ChatGPT with safety and fairness, Gemini with privacy, and Claude with security—arguing for human-centered mitigation strategies that align with users&#x27; lived experiences rather than system-centered fixes.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://dl.acm.org/doi/full/10.1145/3772318.3791505" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area2/paper_6.png" target="_blank" rel="noopener" aria-label="View full figure for LLM Use for Mental Health: Crowdsourcing Users&#x27; Sentiment-based Perspectives and Values from Social Discussions">
+              <img src="assets/research/area2/paper_6.png" alt="Figure from: LLM Use for Mental Health: Crowdsourcing Users&#x27; Sentiment-based Perspectives and Values from Social Discussions" loading="lazy" />
+            </a>
+            <p class="paper__cap">A value-sensitive pipeline linking sentiments, conditions, and values.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2026</span>
+              <span class="paper__venue">WWW &#x27;26 — Proceedings of the ACM Web Conference 2026</span>
+            </div>
+            <h3 class="paper__title">LLM Use for Mental Health: Crowdsourcing Users&#x27; Sentiment-based Perspectives and Values from Social Discussions</h3>
+            <p class="paper__authors">Lingyao Li, Xiaoshan Huang, Renkai Ma, Ben Zefeng Zhang, Haolun Wu, Fan Yang, Chen Chen</p>
+            <p class="paper__abs">This study crowdsources posts from six social platforms to examine how people use LLM chatbots for mental health, applying an LLM-assisted pipeline grounded in Value-Sensitive Design. It shows that use is highly condition-specific—positive for neurodivergent users, more negative for higher-risk disorders—and maps how user perspectives co-occur with values such as identity, autonomy, and privacy.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://dl.acm.org/doi/10.1145/3774904.3793025" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area2/paper_8.png" target="_blank" rel="noopener" aria-label="View full figure for Negotiating Digital Identities with AI Companions: Motivations, Strategies, and Emotional Outcomes">
+              <img src="assets/research/area2/paper_8.png" alt="Figure from: Negotiating Digital Identities with AI Companions: Motivations, Strategies, and Emotional Outcomes" loading="lazy" />
+            </a>
+            <p class="paper__cap">The three-stage identity negotiation process with AI companions.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2026</span>
+              <span class="paper__venue">CHI &#x27;26 — Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems</span>
+            </div>
+            <h3 class="paper__title">Negotiating Digital Identities with AI Companions: Motivations, Strategies, and Emotional Outcomes</h3>
+            <p class="paper__authors">Renkai Ma, Shuo Niu, Lingyao Li, Alex Hirth, Ava Brehm, Rowajana Behterin Barbie</p>
+            <p class="paper__abs">This study conducts an LLM-assisted thematic analysis of 22,374 Character.AI subreddit discussions, using Identity Negotiation Theory to trace how users construct and negotiate identity with AI companions. It identifies user motivations, communication expectations, and identity co-construction strategies, framing the interaction as a socio-emotional sandbox where users experiment with social roles and express emotions.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.1145/3772318.3791473" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area2/paper_10.png" target="_blank" rel="noopener" aria-label="View full figure for Exploring Needs and Design Opportunities for Proactive Information Support in In-Person Small-Group Conversations">
+              <img src="assets/research/area2/paper_10.png" alt="Figure from: Exploring Needs and Design Opportunities for Proactive Information Support in In-Person Small-Group Conversations" loading="lazy" />
+            </a>
+            <p class="paper__cap">Mixed-reality technology probes for small-group conversations.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2026</span>
+              <span class="paper__venue">CHI EA &#x27;26 — Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems</span>
+            </div>
+            <h3 class="paper__title">Exploring Needs and Design Opportunities for Proactive Information Support in In-Person Small-Group Conversations</h3>
+            <p class="paper__authors">Shaoze Zhou, Diana Nelly Rivera Rodriguez, Pedro Remior, Joaquin Frangi, Lingyao Li, Renkai Ma, Janet G. Johnson, Christine Lisetti, Chen Chen</p>
+            <p class="paper__abs">This study investigates needs and design opportunities for proactive information support during in-person small-group conversations, using mixed-reality technology probes worn by participants. Through hands-on sessions, it surfaces when and how proactive AI assistance is helpful versus disruptive, and distills concrete design opportunities for supporting natural, face-to-face group interaction.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.1145/3772363.3799279" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area2/paper_4.png" target="_blank" rel="noopener" aria-label="View full figure for COGNITION: From Evaluation to Defense against Multimodal LLM CAPTCHA Solvers">
+              <img src="assets/research/area2/paper_4.png" alt="Figure from: COGNITION: From Evaluation to Defense against Multimodal LLM CAPTCHA Solvers" loading="lazy" />
+            </a>
+            <p class="paper__cap">Evaluating and then defending against multimodal LLM CAPTCHA solvers.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2026</span>
+              <span class="paper__venue">USENIX Security &#x27;26 — USENIX Security Symposium</span>
+            </div>
+            <h3 class="paper__title">COGNITION: From Evaluation to Defense against Multimodal LLM CAPTCHA Solvers</h3>
+            <p class="paper__authors">Junyu Wang, Changjia Zhu, Yuanbo Zhou, Lingyao Li, Xu He, Mingkui Wei, Junjie Xiong</p>
+            <p class="paper__abs">This study examines how multimodal LLMs undermine visual CAPTCHA security, evaluating seven models on eighteen real-world CAPTCHA types for accuracy, latency, and cost. By analyzing reasoning traces to understand why models succeed or fail, it derives defense guidelines and hardens a vulnerable CAPTCHA design, dropping state-of-the-art solver success from over 95% to 0%.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.48550/arXiv.2512.02318" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area2/paper_2.png" target="_blank" rel="noopener" aria-label="View full figure for Beyond the Uncanny Valley: A Mixed-Method Investigation of Anthropomorphism in Protective Responses to Robot Abuse">
+              <img src="assets/research/area2/paper_2.png" alt="Figure from: Beyond the Uncanny Valley: A Mixed-Method Investigation of Anthropomorphism in Protective Responses to Robot Abuse" loading="lazy" />
+            </a>
+            <p class="paper__cap">Study design across low, moderate, and high robot anthropomorphism.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2025</span>
+              <span class="paper__venue">arXiv preprint</span>
+            </div>
+            <h3 class="paper__title">Beyond the Uncanny Valley: A Mixed-Method Investigation of Anthropomorphism in Protective Responses to Robot Abuse</h3>
+            <p class="paper__authors">Fan Yang, Lingyao Li, Yaxin Hu, Michael D. Rodgers, Renkai Ma</p>
+            <p class="paper__abs">This study runs a mixed-method experiment with 201 participants to test how robot anthropomorphism shapes people&#x27;s protective responses to robot abuse, triangulating self-report surveys, facial-expression physiology, and qualitative reflections. It finds that protective responses are non-linear, with a moderately humanlike robot rated the eeriest and eliciting the strongest physiological anger expressions.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.48550/arXiv.2510.26082" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area2/paper_5.png" target="_blank" rel="noopener" aria-label="View full figure for I don&#x27;t Want You to Die: A Shared Responsibility Framework for Safeguarding Child-Robot Companionship">
+              <img src="assets/research/area2/paper_5.png" alt="Figure from: I don&#x27;t Want You to Die: A Shared Responsibility Framework for Safeguarding Child-Robot Companionship" loading="lazy" />
+            </a>
+            <p class="paper__cap">A shared-responsibility framework for child-robot companionship.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2025</span>
+              <span class="paper__venue">arXiv preprint</span>
+            </div>
+            <h3 class="paper__title">I don&#x27;t Want You to Die: A Shared Responsibility Framework for Safeguarding Child-Robot Companionship</h3>
+            <p class="paper__authors">Fan Yang, Renkai Ma, Yaxin Hu, Michael D. Rodgers, Lingyao Li</p>
+            <p class="paper__abs">This study uses the Moxie social-robot shutdown as a case study, surveying 72 U.S. participants to ask who bears responsibility when children&#x27;s emotional bonds with robots are abruptly broken. It develops a shared-responsibility framework spanning companies, parents, developers, and government, and shows how attributions vary with participants&#x27; political ideology and parental status.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.48550/arXiv.2510.26080" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area2/paper_9.png" target="_blank" rel="noopener" aria-label="View full figure for What&#x27;s in a Prompt? A Large-Scale Experiment to Assess the Impact of Prompt Design on the Compliance and Accuracy of LLM-Generated Text Annotations">
+              <img src="assets/research/area2/paper_9.png" alt="Figure from: What&#x27;s in a Prompt? A Large-Scale Experiment to Assess the Impact of Prompt Design on the Compliance and Accuracy of LLM-Generated Text Annotations" loading="lazy" />
+            </a>
+            <p class="paper__cap">A multi-prompt experiment across models and four CSS tasks.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2025</span>
+              <span class="paper__venue">ICWSM &#x27;25 — International AAAI Conference on Web and Social Media</span>
+            </div>
+            <h3 class="paper__title">What&#x27;s in a Prompt? A Large-Scale Experiment to Assess the Impact of Prompt Design on the Compliance and Accuracy of LLM-Generated Text Annotations</h3>
+            <p class="paper__authors">Shubham Atreja, Joshua Ashkinaze, Lingyao Li, Julia Mendelsohn, Libby Hemphill</p>
+            <p class="paper__abs">This study conducts a large-scale, multi-prompt experiment testing how model choice and prompt-design features affect the compliance and accuracy of LLM-generated text annotations across four computational social science tasks. It shows annotation quality is strongly prompt-dependent—small wording changes can shift label distributions—serving as both a practical guide and a cautionary warning for researchers.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.1609/icwsm.v19i1.35807" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area2/paper_1.png" target="_blank" rel="noopener" aria-label="View full figure for &quot;HOT&quot; ChatGPT: The Promise of ChatGPT in Detecting and Discriminating Hateful, Offensive, and Toxic Comments on Social Media">
+              <img src="assets/research/area2/paper_1.png" alt="Figure from: &quot;HOT&quot; ChatGPT: The Promise of ChatGPT in Detecting and Discriminating Hateful, Offensive, and Toxic Comments on Social Media" loading="lazy" />
+            </a>
+            <p class="paper__cap">Five prompt designs for detecting Hateful, Offensive, Toxic content.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2024</span>
+              <span class="paper__venue">ACM Transactions on the Web</span>
+            </div>
+            <h3 class="paper__title">&quot;HOT&quot; ChatGPT: The Promise of ChatGPT in Detecting and Discriminating Hateful, Offensive, and Toxic Comments on Social Media</h3>
+            <p class="paper__authors">Lingyao Li, Lizhou Fan, Shubham Atreja, Libby Hemphill</p>
+            <p class="paper__abs">This study tests ChatGPT&#x27;s ability to detect Hateful, Offensive, and Toxic (HOT) content on social media, comparing its classifications with crowdsourced human annotations across five prompt designs. It reaches about 80% accuracy, finds that the model treats hateful and offensive content as subsets of toxic, and shows that the choice of prompt strongly affects performance.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://dl.acm.org/doi/full/10.1145/3643829" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area2/paper_11.png" target="_blank" rel="noopener" aria-label="View full figure for ChatGPT in Education: A Discourse Analysis of Worries and Concerns on Social Media">
+              <img src="assets/research/area2/paper_11.png" alt="Figure from: ChatGPT in Education: A Discourse Analysis of Worries and Concerns on Social Media" loading="lazy" />
+            </a>
+            <p class="paper__cap">Topic and social-network analysis of education concerns on Twitter.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2024</span>
+              <span class="paper__venue">Education and Information Technologies</span>
+            </div>
+            <h3 class="paper__title">ChatGPT in Education: A Discourse Analysis of Worries and Concerns on Social Media</h3>
+            <p class="paper__authors">Lingyao Li, Zihui Ma, Lizhou Fan, Sanggyu Lee, Huizi Yu, Libby Hemphill</p>
+            <p class="paper__abs">This study analyzes Twitter discourse using BERT-based topic modeling and social network analysis to surface concerns about ChatGPT in education. It identifies five categories of worry—academic integrity, learning outcomes, capability limits, policy and social issues, and workforce challenges—and offers implications for educators, policymakers, technology companies, and media agencies.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://link.springer.com/article/10.1007/s10639-023-12256-9" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area2/paper_12.png" target="_blank" rel="noopener" aria-label="View full figure for Key Factors in MOOC Pedagogy based on NLP Sentiment Analysis of Learner Reviews: What Makes a Hit">
+              <img src="assets/research/area2/paper_12.png" alt="Figure from: Key Factors in MOOC Pedagogy based on NLP Sentiment Analysis of Learner Reviews: What Makes a Hit" loading="lazy" />
+            </a>
+            <p class="paper__cap">Sentiment-based analysis of top-rated MOOC learner reviews.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2022</span>
+              <span class="paper__venue">Computers &amp; Education</span>
+            </div>
+            <h3 class="paper__title">Key Factors in MOOC Pedagogy based on NLP Sentiment Analysis of Learner Reviews: What Makes a Hit</h3>
+            <p class="paper__authors">Lingyao Li, John Johnson, William Aarhus, Dhawal Shah</p>
+            <p class="paper__abs">This study applies NLP sentiment analysis and a topical keyword ontology to learner reviews of top-rated Coursera courses to ask what makes a MOOC a hit. It distinguishes knowledge-seeking from skill-seeking courses and links course-design quality and instructional factors to learner satisfaction, offering guidance for universities competing in the crowded MOOC market.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.1016/j.compedu.2021.104354" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="rsec rsec--app" id="health">
+      <div class="rsec__head">
+        <span class="rsec__tag">Applications</span>
+        <h2>AI for Health</h2>
+        <p>We bring AI to healthcare tasks, engaging directly with how people experience treatments, services, and policies, and building systems that help them find and act on trustworthy information. We first leverage LLMs to analyze public discourse at scale, revealing the lived experience of medications and the public's evolving attitudes toward health interventions. We then develop LLM-based agents and knowledge-grounded systems that support clinical decision-making and benefit healthcare stakeholders more broadly.</p>
+      </div>
+      <div class="paperlist">
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area3/paper_6.png" target="_blank" rel="noopener" aria-label="View full figure for LLM-as-a-Judge in Healthcare: A Scoping Analysis of Applications, Methods, and Human Alignment">
+              <img src="assets/research/area3/paper_6.png" alt="Figure from: LLM-as-a-Judge in Healthcare: A Scoping Analysis of Applications, Methods, and Human Alignment" loading="lazy" />
+            </a>
+            <p class="paper__cap">A PRISMA-guided review of LLM-as-a-Judge across healthcare.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2026</span>
+              <span class="paper__venue">arXiv preprint</span>
+            </div>
+            <h3 class="paper__title">LLM-as-a-Judge in Healthcare: A Scoping Analysis of Applications, Methods, and Human Alignment</h3>
+            <p class="paper__authors">Lingyao Li, Deyi Li, Chen Chen, Renkai Ma, Runlong Yu, Mingquan Lin, Rui Yin, Lizhou Fan, Cathy Shyr, Siyuan Ma, Mei Liu, Steven Bethard</p>
+            <p class="paper__abs">This study conducts a PRISMA-guided review of how LLM-as-a-Judge—using one LLM to evaluate another system&#x27;s output—is applied in healthcare, screening 541 records and coding 134 eligible studies. It characterizes health scenarios, judge configurations, and technical approaches, and assesses how well automated judgments align with human experts, surfacing where the practice is, and is not yet, trustworthy for clinical evaluation.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.48550/arXiv.2605.25273" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area3/paper_10.png" target="_blank" rel="noopener" aria-label="View full figure for DynamiCare: A Dynamic Multi-Agent Framework for Interactive and Open-Ended Medical Decision-Making">
+              <img src="assets/research/area3/paper_10.png" alt="Figure from: DynamiCare: A Dynamic Multi-Agent Framework for Interactive and Open-Ended Medical Decision-Making" loading="lazy" />
+            </a>
+            <p class="paper__cap">A dynamic multi-agent loop for interactive medical decision-making.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2026</span>
+              <span class="paper__venue">AMIA &#x27;26 — American Medical Informatics Association Informatics Summit</span>
+            </div>
+            <h3 class="paper__title">DynamiCare: A Dynamic Multi-Agent Framework for Interactive and Open-Ended Medical Decision-Making</h3>
+            <p class="paper__authors">Tianqi Shang, Weiqing He, Charles Zheng, Lingyao Li, Li Shen, Bingxin Zhao</p>
+            <p class="paper__abs">This study introduces DynamiCare, a dynamic multi-agent framework that models clinical diagnosis as a multi-round, interactive loop in which specialist agents iteratively query a patient system, integrate new information, and adapt their composition and strategy. Built on MIMIC-Patient, a structured dataset derived from MIMIC-III records, it establishes one of the first benchmarks for open-ended, dynamic clinical decision-making with LLM-powered agents.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13274293/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area3/paper_1.png" target="_blank" rel="noopener" aria-label="View full figure for Artificial Intelligence Agents in Mental Health: A Systematic Review and Meta-Analysis">
+              <img src="assets/research/area3/paper_1.png" alt="Figure from: Artificial Intelligence Agents in Mental Health: A Systematic Review and Meta-Analysis" loading="lazy" />
+            </a>
+            <p class="paper__cap">Systematic review and meta-analysis of AI agents in mental health.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2026</span>
+              <span class="paper__venue">medRxiv preprint</span>
+            </div>
+            <h3 class="paper__title">Artificial Intelligence Agents in Mental Health: A Systematic Review and Meta-Analysis</h3>
+            <p class="paper__authors">Lexuan Zhu, Wenkong Wang, Zhiying Liang, Wenjia Tan, Bingyi Chen, Xinxin Lin, Zhengdong Wu, Huizi Yu, Xiang Li, Jiyuan Jiao, Sijia He, Guangxin Dai, Jiahui Niu, Yi Zhong, Yongbo Zheng, Jie Sun, Andi Han, Lingyao Li, Jiayan Zhou, Wenyue Hua, Ngan Yin Chan, Lin Lu, Yun Kwok Wing, Xin Ma, Lizhou Fan</p>
+            <p class="paper__abs">This study presents a systematic review and meta-analysis of artificial intelligence agents in mental health, synthesizing evidence across studies on their design, deployment, and effectiveness. It characterizes where AI agents show promise for assessment and therapeutic support, quantifies their measured benefits, and highlights the methodological gaps, risks, and evaluation challenges that must be addressed before responsible adoption in mental-health care.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.64898/2026.04.21.26351365" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area3/paper_7.png" target="_blank" rel="noopener" aria-label="View full figure for Patients Speak, AI Listens: LLM-based Analysis of Online Reviews Uncovers Key Drivers for Urgent Care Satisfaction">
+              <img src="assets/research/area3/paper_7.png" alt="Figure from: Patients Speak, AI Listens: LLM-based Analysis of Online Reviews Uncovers Key Drivers for Urgent Care Satisfaction" loading="lazy" />
+            </a>
+            <p class="paper__cap">Aspect-based sentiment analysis of urgent-care online reviews.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2026</span>
+              <span class="paper__venue">IEEE Journal of Biomedical and Health Informatics</span>
+            </div>
+            <h3 class="paper__title">Patients Speak, AI Listens: LLM-based Analysis of Online Reviews Uncovers Key Drivers for Urgent Care Satisfaction</h3>
+            <p class="paper__authors">Xiaoran Xu, Zhaoqian Xue, Chi Zhang, Jhonatan Medri, Junjie Xiong, Jiayan Zhou, Jin Jin, Yongfeng Zhang, Siyuan Ma, Lingyao Li</p>
+            <p class="paper__abs">This study analyzes Google Maps reviews of urgent care facilities across the DMV and Florida using GPT-based, aspect-level sentiment analysis spanning interpersonal, operational, technical, financial, and facility factors. Linking results to neighborhood socioeconomic characteristics, it finds that interpersonal factors and operational efficiency are the strongest drivers of patient satisfaction, offering scalable, place-based insight to guide community healthcare development.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.1109/JBHI.2026.3683684" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area3/paper_3.png" target="_blank" rel="noopener" aria-label="View full figure for DispatchMAS: Fusing Taxonomy and Artificial Intelligence Agents for Emergency Medical Services">
+              <img src="assets/research/area3/paper_3.png" alt="Figure from: DispatchMAS: Fusing Taxonomy and Artificial Intelligence Agents for Emergency Medical Services" loading="lazy" />
+            </a>
+            <p class="paper__cap">Fusing emergency-dispatch taxonomy with AI agents.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2026</span>
+              <span class="paper__venue">BMC Emergency Medicine</span>
+            </div>
+            <h3 class="paper__title">DispatchMAS: Fusing Taxonomy and Artificial Intelligence Agents for Emergency Medical Services</h3>
+            <p class="paper__authors">Xiang Li, Huizi Yu, Wenkong Wang, Yiran Wu, Jiayan Zhou, Wenyue Hua, Xinxin Lin, Wenjia Tan, Lexuan Zhu, Bingyi Chen, Guang Chen, Ming-Li Chen, Yang Zhou, Zhao Li, Themistocles L. Assimes, Yongfeng Zhang, Qingyun Wu, Xin Ma, Lingyao Li, Lizhou Fan</p>
+            <p class="paper__abs">This study develops and evaluates DispatchMAS, a system that fuses a structured emergency-dispatch taxonomy with large language models and a multi-agent system to augment human emergency medical dispatchers. Addressing challenges such as caller distress, ambiguous symptom descriptions, and high cognitive load, it shows how taxonomy-grounded AI agents can support faster and more reliable dispatch decisions in high-stakes, time-critical settings.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://link.springer.com/article/10.1186/s12873-026-01540-9" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area3/paper_8.png" target="_blank" rel="noopener" aria-label="View full figure for Simulated Patient Systems Powered by Large Language Model-based AI Agents Offer Potential for Transforming Medical Education">
+              <img src="assets/research/area3/paper_8.png" alt="Figure from: Simulated Patient Systems Powered by Large Language Model-based AI Agents Offer Potential for Transforming Medical Education" loading="lazy" />
+            </a>
+            <p class="paper__cap">AIPatient: an LLM-agent simulated patient system.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2025</span>
+              <span class="paper__venue">Communications Medicine</span>
+            </div>
+            <h3 class="paper__title">Simulated Patient Systems Powered by Large Language Model-based AI Agents Offer Potential for Transforming Medical Education</h3>
+            <p class="paper__authors">Huizi Yu, Jiayan Zhou, Lingyao Li, Shan Chen, Jack Gallifant, Anye Shi, Jie Sun, Xiang Li, Jingxian He, Wenyue Hua, Mingyu Jin, Guang Chen, Yang Zhou, Zhao Li, Trisha Gupte, Ming-Li Chen, Zahra Azizi, Qi Dou, Bryan P. Yan, Yanqiu Xing, Yongfeng Zhang, Themistocles L. Assimes, Danielle S. Bitterman, Xin Ma, Lin Lu, Lizhou Fan</p>
+            <p class="paper__abs">This study develops AIPatient, a simulated patient system powered by LLM-based agents that combines a retrieval-augmented generation framework with a knowledge graph built from de-identified MIMIC-III patient data. Using six task-specific agents for complex reasoning, it achieves high accuracy, readability, and robustness on EHR-based medical question answering, pointing toward safe, low-cost environments for medical education and clinical training.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://www.nature.com/articles/s43856-025-01283-x" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area3/paper_2.png" target="_blank" rel="noopener" aria-label="View full figure for Crowdsourcing-Based Knowledge Graph Construction for Drug Side Effects Using Large Language Models with an Application on Semaglutide">
+              <img src="assets/research/area3/paper_2.png" alt="Figure from: Crowdsourcing-Based Knowledge Graph Construction for Drug Side Effects Using Large Language Models with an Application on Semaglutide" loading="lazy" />
+            </a>
+            <p class="paper__cap">LLM-built knowledge graph of semaglutide side effects from Reddit.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2025</span>
+              <span class="paper__venue">AMIA &#x27;25 — American Medical Informatics Association Annual Symposium</span>
+            </div>
+            <h3 class="paper__title">Crowdsourcing-Based Knowledge Graph Construction for Drug Side Effects Using Large Language Models with an Application on Semaglutide</h3>
+            <p class="paper__authors">Zhijie Duan, Kai Wei, Zhaoqian Xue, Jiayan Zhou, Shu Yang, Siyuan Ma, Jin Jin, Lingyao Li</p>
+            <p class="paper__abs">This study presents a framework that uses large language models to extract medication side effects from noisy social media text and organize them into a knowledge graph, applied to semaglutide for weight loss using Reddit data. It analyzes reported side effects across brands over time and validates them against the FDA&#x27;s FAERS database, demonstrating a feasible, patient-centered approach to pharmacovigilance.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12919570/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area3/paper_9.png" target="_blank" rel="noopener" aria-label="View full figure for Toxicity on Social Media During the 2022 Mpox Public Health Emergency: Quantitative Study of Topical and Network Dynamics">
+              <img src="assets/research/area3/paper_9.png" alt="Figure from: Toxicity on Social Media During the 2022 Mpox Public Health Emergency: Quantitative Study of Topical and Network Dynamics" loading="lazy" />
+            </a>
+            <p class="paper__cap">Topical and network dynamics of toxic Mpox discourse on Twitter.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2024</span>
+              <span class="paper__venue">Journal of Medical Internet Research</span>
+            </div>
+            <h3 class="paper__title">Toxicity on Social Media During the 2022 Mpox Public Health Emergency: Quantitative Study of Topical and Network Dynamics</h3>
+            <p class="paper__authors">Lizhou Fan, Lingyao Li, Libby Hemphill</p>
+            <p class="paper__abs">This study analyzes more than 1.6 million tweets to characterize toxic online discourse during the 2022 mpox public health emergency, examining its context, extent, content, speakers, and intent. Using BERT-based topic modeling and network analysis, it traces how toxicity originated and spread, offering insights to help platforms and health authorities mitigate harmful discourse during future public health crises.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://www.jmir.org/2024/1/e52997" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area3/paper_5.png" target="_blank" rel="noopener" aria-label="View full figure for Examining the Potential of ChatGPT on Biomedical Information Retrieval: Fact-Checking Drug-Disease Associations">
+              <img src="assets/research/area3/paper_5.png" alt="Figure from: Examining the Potential of ChatGPT on Biomedical Information Retrieval: Fact-Checking Drug-Disease Associations" loading="lazy" />
+            </a>
+            <p class="paper__cap">Fact-checking drug–disease associations with ChatGPT.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2024</span>
+              <span class="paper__venue">Annals of Biomedical Engineering</span>
+            </div>
+            <h3 class="paper__title">Examining the Potential of ChatGPT on Biomedical Information Retrieval: Fact-Checking Drug-Disease Associations</h3>
+            <p class="paper__authors">Zhenxiang Gao, Lingyao Li, Siyuan Ma, Qinyong Wang, Libby Hemphill, Rong Xu</p>
+            <p class="paper__abs">This study explores whether ChatGPT can support biomedical information retrieval by fact-checking drug–disease associations, testing it on 2,694 true and 5,662 false drug–disease pairs under varied prompt designs. It finds accuracies of roughly 75–84% for true pairs and 96–98% for false pairs, suggesting ChatGPT can aid pharmacy-related search while cautioning that its accuracy must be carefully vetted before clinical use.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.1007/s10439-023-03385-w" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area3/paper_4.png" target="_blank" rel="noopener" aria-label="View full figure for Dynamic Assessment of the COVID-19 Vaccine Acceptance Leveraging Social Media Data">
+              <img src="assets/research/area3/paper_4.png" alt="Figure from: Dynamic Assessment of the COVID-19 Vaccine Acceptance Leveraging Social Media Data" loading="lazy" />
+            </a>
+            <p class="paper__cap">A social-media vaccine acceptance index over time.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2022</span>
+              <span class="paper__venue">Journal of Biomedical Informatics</span>
+            </div>
+            <h3 class="paper__title">Dynamic Assessment of the COVID-19 Vaccine Acceptance Leveraging Social Media Data</h3>
+            <p class="paper__authors">Lingyao Li, Jiayan Zhou, Zihui Ma, Michelle T. Bensi, Molly A. Hall, Gregory B. Baecher</p>
+            <p class="paper__abs">This study analyzes 29 million vaccine-related tweets from August 2020 to April 2021 and proposes a social-media-based vaccine acceptance index (VAI) for rapidly tracking public attitudes toward COVID-19 vaccination. By measuring acceptance dynamically across time and geography, it offers health authorities a faster, lower-cost complement to traditional surveys for monitoring and responding to vaccine hesitancy.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.1016/j.jbi.2022.104054" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="rsec rsec--app" id="urban">
+      <div class="rsec__head">
+        <span class="rsec__tag">Applications</span>
+        <h2>AI for Urban & Community</h2>
+        <p>We combine crowdsourced data with AI models to understand how communities experience events and the urban environments around them. We build LLMs that reason about place and simulate events before they unfold, and we examine questions of fairness in the built environment — from accessible urban design to equitable access to local services. The aim is to make public needs visible at scale and support more resilient, equitable communities.</p>
+      </div>
+      <div class="paperlist">
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area4/paper_3.png" target="_blank" rel="noopener" aria-label="View full figure for Do VLMs See What Sensors Feel? A Scalable Expert-Guided Design for Wheelchair Accessibility Assessment from Street View">
+              <img src="assets/research/area4/paper_3.png" alt="Figure from: Do VLMs See What Sensors Feel? A Scalable Expert-Guided Design for Wheelchair Accessibility Assessment from Street View" loading="lazy" />
+            </a>
+            <p class="paper__cap">Expert-guided VLM assessment of wheelchair accessibility from street view.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2026</span>
+              <span class="paper__venue">arXiv preprint</span>
+            </div>
+            <h3 class="paper__title">Do VLMs See What Sensors Feel? A Scalable Expert-Guided Design for Wheelchair Accessibility Assessment from Street View</h3>
+            <p class="paper__authors">Dongdong Wang, Alina Hagen, Isabelle Gatmaitan, Hao Zhou, Yiwen Dong, Shabboo Valipoor, Vivian W.H. Wong, Lingyao Li</p>
+            <p class="paper__abs">This study examines whether vision-language models can identify wheelchair-accessibility barriers from Google Street View imagery, proposing an expert-guided, retrieval-augmented framework that combines images, ADA-informed guidance, and expert rubrics. Validated on a campus-scale dataset linking 407 locations to GPS-derived wheelchair dwell behavior, it shows VLM ratings align partially with real mobility friction while struggling with subtle surface conditions and transient obstructions.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://arxiv.org/abs/2606.07642" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area4/paper_2.png" target="_blank" rel="noopener" aria-label="View full figure for Crowdsourced Reviews Reveal Substantial Disparities in Public Perceptions of Parking">
+              <img src="assets/research/area4/paper_2.png" alt="Figure from: Crowdsourced Reviews Reveal Substantial Disparities in Public Perceptions of Parking" loading="lazy" />
+            </a>
+            <p class="paper__cap">Parking sentiment across nearly five million Google Maps reviews.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2026</span>
+              <span class="paper__venue">Cities</span>
+            </div>
+            <h3 class="paper__title">Crowdsourced Reviews Reveal Substantial Disparities in Public Perceptions of Parking</h3>
+            <p class="paper__authors">Lingyao Li, Songhua Hu, Ly Dinh, Libby Hemphill</p>
+            <p class="paper__abs">This study uses crowdsourced online reviews to investigate public perceptions of parking across the United States, analyzing 4,987,483 parking-related Google Maps reviews for over 1.1 million points of interest across 911 metropolitan areas. Using BERT-based sentiment classification and regression, it reveals substantial disparities across place types and regions, giving planners a cost-effective way to locate problematic areas and make informed parking-management decisions.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.1016/j.cities.2026.106866" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area4/paper_9.png" target="_blank" rel="noopener" aria-label="View full figure for LSDTs: LLM-Augmented Semantic Digital Twins for Adaptive Knowledge-Intensive Infrastructure Planning">
+              <img src="assets/research/area4/paper_9.png" alt="Figure from: LSDTs: LLM-Augmented Semantic Digital Twins for Adaptive Knowledge-Intensive Infrastructure Planning" loading="lazy" />
+            </a>
+            <p class="paper__cap">LLM-augmented semantic digital twins for infrastructure planning.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2026</span>
+              <span class="paper__venue">AAAI &#x27;26 — Proceedings of the AAAI Conference on Artificial Intelligence</span>
+            </div>
+            <h3 class="paper__title">LSDTs: LLM-Augmented Semantic Digital Twins for Adaptive Knowledge-Intensive Infrastructure Planning</h3>
+            <p class="paper__authors">Naiyi Li, Zihui Ma, Runlong Yu, Lingyao Li</p>
+            <p class="paper__abs">This study proposes LSDTs (LLM-Augmented Semantic Digital Twins), a framework that uses large language models to extract planning knowledge from unstructured documents—environmental regulations and technical guidelines—and organize it into a formal ontology that powers a digital twin. Demonstrated on offshore wind-farm planning in Maryland, including Hurricane Sandy, it enables interpretable, regulation-aware layout optimization and high-fidelity, adaptive simulation.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.1609/aaai.v40i45.41232" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area4/paper_12.png" target="_blank" rel="noopener" aria-label="View full figure for Toward Satisfactory Public Accessibility: A Crowdsourcing Approach through Online Reviews to Inclusive Urban Design">
+              <img src="assets/research/area4/paper_12.png" alt="Figure from: Toward Satisfactory Public Accessibility: A Crowdsourcing Approach through Online Reviews to Inclusive Urban Design" loading="lazy" />
+            </a>
+            <p class="paper__cap">Fine-tuned LLMs gauge accessibility sentiment in online reviews.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2025</span>
+              <span class="paper__venue">Computers, Environment and Urban Systems</span>
+            </div>
+            <h3 class="paper__title">Toward Satisfactory Public Accessibility: A Crowdsourcing Approach through Online Reviews to Inclusive Urban Design</h3>
+            <p class="paper__authors">Lingyao Li, Songhua Hu, Yinpei Dai, Min Deng, Parisa Momeni, Gabriel Laverghetta, Lizhou Fan, Zihui Ma, Xi Wang, Siyuan Ma, Jay Ligatti, Libby Hemphill</p>
+            <p class="paper__abs">This study examines over one million Google Maps reviews across the United States and fine-tunes the Llama 3 model with Low-Rank Adaptation (LoRA) to identify public sentiment toward accessibility. By surfacing how accessible different categories of places are perceived to be, it offers a scalable, crowdsourced alternative to surveys and interviews for guiding more inclusive urban design.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.1016/j.compenvurbsys.2025.102329" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area4/paper_8.png" target="_blank" rel="noopener" aria-label="View full figure for LLMs as World Models: Data-Driven and Human-Centered Pre-Event Simulation for Disaster Impact Assessment">
+              <img src="assets/research/area4/paper_8.png" alt="Figure from: LLMs as World Models: Data-Driven and Human-Centered Pre-Event Simulation for Disaster Impact Assessment" loading="lazy" />
+            </a>
+            <p class="paper__cap">LLM pre-event simulation of earthquake impacts.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2025</span>
+              <span class="paper__venue">EMNLP &#x27;25 — Empirical Methods in Natural Language Processing</span>
+            </div>
+            <h3 class="paper__title">LLMs as World Models: Data-Driven and Human-Centered Pre-Event Simulation for Disaster Impact Assessment</h3>
+            <p class="paper__authors">Lingyao Li, Dawei Li, Zhenhui Ou, Xiaoran Xu, Jingxiao Liu, Zihui Ma, Runlong Yu, Min Deng</p>
+            <p class="paper__abs">This study examines large language models as world models for proactively simulating sudden-onset disasters, generating Modified Mercalli Intensity predictions for earthquakes at zip-code and county scales from multimodal geospatial, socioeconomic, building, and street-level data. Evaluated on the 2014 Napa and 2019 Ridgecrest earthquakes against USGS &#x27;Did You Feel It?&#x27; reports, it achieves strong alignment (correlation 0.88), improved further by retrieval augmentation and visual inputs.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://aclanthology.org/2025.emnlp-main.153/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area4/paper_1.png" target="_blank" rel="noopener" aria-label="View full figure for Analyzing Public Response to Wildfires: A Socio-Spatial Study using SIR Models and NLP Techniques">
+              <img src="assets/research/area4/paper_1.png" alt="Figure from: Analyzing Public Response to Wildfires: A Socio-Spatial Study using SIR Models and NLP Techniques" loading="lazy" />
+            </a>
+            <p class="paper__cap">Socio-spatial wildfire response via SIR models and NLP.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2025</span>
+              <span class="paper__venue">Computers, Environment and Urban Systems</span>
+            </div>
+            <h3 class="paper__title">Analyzing Public Response to Wildfires: A Socio-Spatial Study using SIR Models and NLP Techniques</h3>
+            <p class="paper__authors">Zihui Ma, Guangxiao Hu, Ting-Syuan Lin, Lingyao Li, Songhua Hu, Loni Hagen, Gregory B. Baecher</p>
+            <p class="paper__abs">This study uses social media data to assess how the public perceives and responds to wildfire threats in near-real time, focusing on Wildland-Urban Interface communities. Combining BERTopic topic modeling, a Susceptible-Infectious-Recovered model that yields awareness and resilience indicators, and GIS-based spatial analysis, it links public responses to community characteristics and surfaces social inequities relevant to equitable disaster management.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.1016/j.compenvurbsys.2025.102333" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area4/paper_4.png" target="_blank" rel="noopener" aria-label="View full figure for Empowering LLM Agents with Geospatial Awareness: Toward Grounded Reasoning for Wildfire Response">
+              <img src="assets/research/area4/paper_4.png" alt="Figure from: Empowering LLM Agents with Geospatial Awareness: Toward Grounded Reasoning for Wildfire Response" loading="lazy" />
+            </a>
+            <p class="paper__cap">A geospatial awareness layer grounding LLM agents for wildfire response.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2025</span>
+              <span class="paper__venue">arXiv preprint</span>
+            </div>
+            <h3 class="paper__title">Empowering LLM Agents with Geospatial Awareness: Toward Grounded Reasoning for Wildfire Response</h3>
+            <p class="paper__authors">Yiheng Chen, Lingyao Li, Zihui Ma, Qikai Hu, Yilun Zhu, Min Deng, Runlong Yu</p>
+            <p class="paper__abs">This study introduces a Geospatial Awareness Layer (GAL) that grounds LLM agents in structured earth data for disaster response. From raw wildfire detections, GAL retrieves and integrates infrastructure, demographic, terrain, and weather information into a concise perception script, enabling agents to produce evidence-based resource-allocation recommendations. Evaluated on real wildfire scenarios, geospatially grounded agents outperform baselines and generalize to hazards such as floods and hurricanes.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.48550/arXiv.2510.12061" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area4/paper_5.png" target="_blank" rel="noopener" aria-label="View full figure for From Pixels to Places: A Systematic Benchmark for Evaluating Image Geolocalization Ability in Large Language Models">
+              <img src="assets/research/area4/paper_5.png" alt="Figure from: From Pixels to Places: A Systematic Benchmark for Evaluating Image Geolocalization Ability in Large Language Models" loading="lazy" />
+            </a>
+            <p class="paper__cap">IMAGEO-Bench for LLM image geolocalization.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2025</span>
+              <span class="paper__venue">arXiv preprint</span>
+            </div>
+            <h3 class="paper__title">From Pixels to Places: A Systematic Benchmark for Evaluating Image Geolocalization Ability in Large Language Models</h3>
+            <p class="paper__authors">Lingyao Li, Runlong Yu, Qikai Hu, Bowei Li, Min Deng, Yang Zhou, Xiaowei Jia</p>
+            <p class="paper__abs">This study introduces IMAGEO-Bench, a systematic benchmark for evaluating the image-geolocalization ability of large language models across accuracy, distance error, geospatial bias, and reasoning process. Testing ten open- and closed-source models on global street scenes, U.S. points of interest, and unseen images, it reveals clear performance gaps and geospatial biases, with models performing far better in high-resource regions than in underrepresented ones.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.48550/arXiv.2508.01608" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area4/paper_7.png" target="_blank" rel="noopener" aria-label="View full figure for Investigating Disaster Response for Resilient Communities through Social Media Data and the Susceptible-Infected-Recovered (SIR) Model">
+              <img src="assets/research/area4/paper_7.png" alt="Figure from: Investigating Disaster Response for Resilient Communities through Social Media Data and the Susceptible-Infected-Recovered (SIR) Model" loading="lazy" />
+            </a>
+            <p class="paper__cap">Social-media disaster response modeled with BERT topics and SIR.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2024</span>
+              <span class="paper__venue">Sustainable Cities and Society</span>
+            </div>
+            <h3 class="paper__title">Investigating Disaster Response for Resilient Communities through Social Media Data and the Susceptible-Infected-Recovered (SIR) Model</h3>
+            <p class="paper__authors">Zihui Ma, Lingyao Li, Libby Hemphill, Gregory B. Baecher, Yubai Yuan</p>
+            <p class="paper__abs">This study examines disaster response and community resilience during the 2020 Western U.S. wildfire season using social media data. Applying BERT-based topic modeling and a Susceptible-Infected-Recovered model with temporal-spatial analysis, it tracks how public concerns evolve across regions, giving responders and decision-makers timely, data-driven measures to understand evolving situations and optimize resource allocation.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.1016/j.scs.2024.105362" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area4/paper_6.png" target="_blank" rel="noopener" aria-label="View full figure for How has Airport Service Quality Changed in the Context of COVID-19? A Data-Driven Crowdsourcing Approach based on Sentiment Analysis">
+              <img src="assets/research/area4/paper_6.png" alt="Figure from: How has Airport Service Quality Changed in the Context of COVID-19? A Data-Driven Crowdsourcing Approach based on Sentiment Analysis" loading="lazy" />
+            </a>
+            <p class="paper__cap">Crowdsourced airport service-quality sentiment during COVID-19.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2022</span>
+              <span class="paper__venue">Journal of Air Transport Management</span>
+            </div>
+            <h3 class="paper__title">How has Airport Service Quality Changed in the Context of COVID-19? A Data-Driven Crowdsourcing Approach based on Sentiment Analysis</h3>
+            <p class="paper__authors">Lingyao Li, Yujie Mao, Yu Wang, Zihui Ma</p>
+            <p class="paper__abs">This study adopts a data-driven crowdsourcing approach to measure airport service quality during the COVID-19 pandemic, analyzing Google Maps reviews from the 98 busiest U.S. airports. Using a topical ontology of service attributes and sentiment analysis, it shows travelers grew more positive about environment and personnel while remaining steady about facilities, offering airport administrators a fast, low-cost alternative to traveler surveys.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.1016/j.jairtraman.2022.102298" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area4/paper_11.png" target="_blank" rel="noopener" aria-label="View full figure for Data-Driven Investigations of Using Social Media to Aid Evacuations amid Western United States Wildfire Season">
+              <img src="assets/research/area4/paper_11.png" alt="Figure from: Data-Driven Investigations of Using Social Media to Aid Evacuations amid Western United States Wildfire Season" loading="lazy" />
+            </a>
+            <p class="paper__cap">Social media to aid wildfire evacuations.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2021</span>
+              <span class="paper__venue">Fire Safety Journal</span>
+            </div>
+            <h3 class="paper__title">Data-Driven Investigations of Using Social Media to Aid Evacuations amid Western United States Wildfire Season</h3>
+            <p class="paper__authors">Lingyao Li, Zihui Ma, Tao Cao</p>
+            <p class="paper__abs">This study presents a data-driven analysis of how social media can aid evacuations during the 2020 Western U.S. wildfires, drawing on 53,990 relevant tweets. It validates social-media signals against official channels across time and space, classifies posts into pre- and on-evacuation phases, and uses network analysis to reveal that government channels, news agencies, and public figures dominate information dissemination.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.1016/j.firesaf.2021.103480" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="paper">
+          <div class="paper__figbox">
+            <a class="paper__fig" href="assets/research/area4/paper_10.png" target="_blank" rel="noopener" aria-label="View full figure for Social Media Crowdsourcing for Rapid Damage Assessment following a Sudden-Onset Natural Hazard Event">
+              <img src="assets/research/area4/paper_10.png" alt="Figure from: Social Media Crowdsourcing for Rapid Damage Assessment following a Sudden-Onset Natural Hazard Event" loading="lazy" />
+            </a>
+            <p class="paper__cap">Rapid post-disaster damage assessment from social media.</p>
+          </div>
+          <div class="paper__body">
+            <div class="paper__meta">
+              <span class="paper__year">2021</span>
+              <span class="paper__venue">International Journal of Information Management</span>
+            </div>
+            <h3 class="paper__title">Social Media Crowdsourcing for Rapid Damage Assessment following a Sudden-Onset Natural Hazard Event</h3>
+            <p class="paper__authors">Lingyao Li, Michelle Bensi, Qingbin Cui, Gregory B. Baecher, You Huang</p>
+            <p class="paper__abs">This study investigates using social media, principally Twitter, to make rapid early assessments of damage following sudden-onset hazard events. It defines a text-based damage assessment scale for earthquakes and develops a text-classification model, exploring the potential and the challenges of crowdsourced social-media data as a fast complement to satellite monitoring, ground sensors, and inspections for first responders and agencies.</p>
+            <div class="paper__links">
+              <a class="pdf-btn" href="https://doi.org/10.1016/j.ijinfomgt.2021.102378" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+                [PDF]
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__col">
+        <div class="brand brand--footer">
+          <span class="brand__mark" aria-hidden="true">
+            <img src="assets/img/sail-logo.png" alt="SAIL logo" width="36" height="36" />
+          </span>
+          <span class="brand__text"><strong>SAIL</strong><em>Sociotechnical AI Lab</em></span>
+        </div>
+        <p class="footer__about">AI at the interface of human and sociotechnical processes.</p>
+      </div>
+      <div class="footer__col">
+        <h5>Explore</h5>
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="news.html">News</a>
+        <a href="join.html">Join Us</a>
+      </div>
+      <div class="footer__col">
+        <h5>Contact</h5>
+        <p><a href="https://infosci.arizona.edu/" target="_blank" rel="noopener">College of Information Science</a><br><a href="https://www.arizona.edu/" target="_blank" rel="noopener">University of Arizona</a><br>Tucson, AZ</p>
+        <a href="mailto:lingyaoli@arizona.edu">lingyaoli@arizona.edu</a>
+      </div>
+      <div class="footer__col footer__col--logo">
+        <img src="assets/img/ua-coi-logo.png" alt="University of Arizona College of Information Science" />
+      </div>
+    </div>
+    <div class="footer__bar"><span>&copy; <span id="year"></span> Sociotechnical AI Lab &middot; University of Arizona</span></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

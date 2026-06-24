@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News — SAIL | University of Arizona</title>
+  <meta name="description" content="News and milestones from the Sociotechnical AI Lab (SAIL) at the University of Arizona." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/img/sail-logo.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/page.css" />
+</head>
+<body>
+  <header class="nav scrolled" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html" aria-label="SAIL home">
+        <span class="brand__mark" aria-hidden="true">
+          <img src="assets/img/sail-logo.png" alt="SAIL logo" width="42" height="42" />
+        </span>
+        <span class="brand__text"><strong>SAIL</strong><em>Sociotechnical AI Lab</em></span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="news.html" class="is-active">News</a>
+        <a href="join.html">Join Us</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="page__hero">
+      <canvas class="page__canvas" id="netCanvas" aria-hidden="true"></canvas>
+      <div class="page__hero-inner">
+        <h1>News</h1>
+        <p class="page__sub">Announcements, new papers, talks, and lab milestones.</p>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item tl-item--left tl--paper">
+        <span class="tl-date"><span class="dot"></span>Jul 1, 2026</span>
+        <div class="tl-card">
+          <span class="tl-label">Paper</span>
+          <p>Our paper has been accepted to USENIX Security 2026 <a href="https://arxiv.org/abs/2512.02318" target="_blank" rel="noopener">[Paper]</a>.</p>
+        </div>
+      </div>
+      <div class="tl-item tl-item--right tl--paper">
+        <span class="tl-date"><span class="dot"></span>Jul 1, 2026</span>
+        <div class="tl-card">
+          <span class="tl-label">Paper</span>
+          <p>We will present our latest work at ACL 2026 in San Diego <a href="https://arxiv.org/abs/2602.14770" target="_blank" rel="noopener">[Paper]</a>.</p>
+        </div>
+      </div>
+      <div class="tl-item tl-item--left tl--people">
+        <span class="tl-date"><span class="dot"></span>Jul 1, 2026</span>
+        <div class="tl-card">
+          <span class="tl-label">People</span>
+          <p>Welcome to Zhaoqian, who joins the lab as a Ph.D. student! Zhaoqian comes to us from UPenn, where he is a research assistant, and he holds a master&#x27;s degree from Georgetown University.</p>
+        </div>
+      </div>
+      <div class="tl-item tl-item--right tl--event">
+        <span class="tl-date"><span class="dot"></span>Jul 1, 2026</span>
+        <div class="tl-card">
+          <span class="tl-label">Event</span>
+          <p>The Sociotechnical AI Lab (SAIL) is officially launched!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__col">
+        <div class="brand brand--footer">
+          <span class="brand__mark" aria-hidden="true">
+            <img src="assets/img/sail-logo.png" alt="SAIL logo" width="36" height="36" />
+          </span>
+          <span class="brand__text"><strong>SAIL</strong><em>Sociotechnical AI Lab</em></span>
+        </div>
+        <p class="footer__about">AI at the interface of human and sociotechnical processes.</p>
+      </div>
+      <div class="footer__col">
+        <h5>Explore</h5>
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="news.html">News</a>
+        <a href="join.html">Join Us</a>
+      </div>
+      <div class="footer__col">
+        <h5>Contact</h5>
+        <p><a href="https://infosci.arizona.edu/" target="_blank" rel="noopener">College of Information Science</a><br><a href="https://www.arizona.edu/" target="_blank" rel="noopener">University of Arizona</a><br>Tucson, AZ</p>
+        <a href="mailto:lingyaoli@arizona.edu">lingyaoli@arizona.edu</a>
+      </div>
+      <div class="footer__col footer__col--logo">
+        <img src="assets/img/ua-coi-logo.png" alt="University of Arizona College of Information Science" />
+      </div>
+    </div>
+    <div class="footer__bar"><span>&copy; <span id="year"></span> Sociotechnical AI Lab &middot; University of Arizona</span></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
